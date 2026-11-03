@@ -1,0 +1,13 @@
+name: Print Today's Date
+
+on:
+  push:
+    branches: [ "main", "develop" ]
+  workflow_dispatch:
+
+jobs:
+  show-date:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print current date
+        run: echo 'Сегодняшняя дата:$(date +"%d.%m.%Y")'
