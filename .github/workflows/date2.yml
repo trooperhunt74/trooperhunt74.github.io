@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print current date
-        run: echo 'Сегодняшняя дата:$(date +"%d.%m.%Y")'
+        run: echo "Сегодняшняя дата:$(date +"%d.%m.%Y")"
